@@ -1,0 +1,31 @@
+<h1>サイト一覧</h1>
+<div>
+  <div>
+    <table
+      <tr>
+          <th>サイト名</th>
+          <th>説明</th>
+        </tr>
+      <% @lists.each do |list| %>
+
+        <tr>
+          <td><%= link_to list.title, list.url, class:"link" %></td>
+          <td><%= list.body %></td>
+          <td><%= link_to "編集", edit_list_path(list.id) %></td>
+          <td><%= link_to "削除", list_path(list.id), method: :delete, "data-confirm" => "本当に削除しますか？" %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+  <div class="form">
+    <%= form_with model: @list do |f| %>
+      <p>サイト名</p>
+        <%= f.text_field :title %>
+      <p>説明</p>
+        <%= f.text_area :body %>
+      <p>URL</p>
+        <%= f.text_field :url %>
+      <%= f.submit '投稿' %>
+    <% end %>
+  </div>
+</div>
