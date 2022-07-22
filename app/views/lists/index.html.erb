@@ -1,13 +1,12 @@
 <h1>サイト一覧</h1>
 <div>
   <div>
-    <table
+    <table>
       <tr>
           <th>サイト名</th>
           <th>説明</th>
         </tr>
       <% @lists.each do |list| %>
-
         <tr>
           <td><%= link_to list.title, list.url, class:"link" %></td>
           <td><%= list.body %></td>

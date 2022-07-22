@@ -1,24 +1,8 @@
-# README
+# Study Programming
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリ概要
+### 開発に至った背景
+　プログラミングを開発する際に、参考とするサイトがバラバラに存在し、わかりやすいサイトがいくつもある中で、それをまとめたものがあったら便利だと考え開発しました。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 今後の改善点
+　ライブラリを利用しない機能の実装、ログイン機能などを実装することで、第三者が勝手に編集できないようにすることが今後改善していく必要があります。
